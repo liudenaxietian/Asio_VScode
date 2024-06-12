@@ -1,0 +1,264 @@
+{
+    "serverPort": 33456,
+    "serverPort4PositiveFeedback": 33446,
+    "serverPort4PollQuery": 33447,
+    "loopQueryTimeGap": 2000,
+    "motorPort": {
+        "comPort": "COM71",
+        "baudRate": 115200,
+        "dataBits": 8,
+        "parity": 0,
+        "stopBits": 0,
+        "readTimeout": 2000,
+        "readGapTimeout": 30,
+        "totalTimeout": 2000
+    },
+    "controlPanelPort": {
+        "comPort": "COM73",
+        "baudRate": 115200,
+        "dataBits": 8,
+        "parity": 0,
+        "stopBits": 0,
+        "readTimeout": 20000,
+        "readGapTimeout": 30,
+        "totalTimeout": 6000
+    },
+    "incubateBoxPort": {
+        "comPort": "COM75",
+        "baudRate": 115200,
+        "dataBits": 8,
+        "parity": 0,
+        "stopBits": 0,
+        "readTimeout": 2000,
+        "readGapTimeout": 30,
+        "totalTimeout": -1
+    },
+    "clampingJawPort": {
+        "comPort": "COM77",
+        "baudRate": 115200,
+        "dataBits": 8,
+        "parity": 0,
+        "stopBits": 0,
+        "readTimeout": 2000,
+        "readGapTimeout": 30,
+        "totalTimeout": 60000
+    },
+    "pumpPort": {
+        "comPort": "COM79",
+        "baudRate": 38400,
+        "dataBits": 8,
+        "parity": 0,
+        "stopBits": 0,
+        "readTimeout": 2000,
+        "readGapTimeout": 1000,
+        "totalTimeout": -1
+    },
+    "scannerPort": {
+        "comPort": "COM81",
+        "baudRate": 115200,
+        "dataBits": 8,
+        "parity": 0,
+        "stopBits": 0,
+        "readTimeout": 10000,
+        "readGapTimeout": 500,
+        "totalTimeout": -1
+    },
+    "clampingJawType": 1,
+    "clampingJawSetting": {
+        "rotateSpeed": 1,
+        "rotatePower": 3,
+        "clampingSpeed": 4,
+        "clampingPower": 88
+    },
+    "clampingJawPos": {
+        "targetBoardPos": 6,
+        "absorptionBoardPos": 798,
+        "halfOpenPos": 45,
+        "closePos": 74
+    },
+    "scannerSetting": {
+        "parseTime": 1000,
+        "exposureTime": 2000,
+        "gain": 3000,
+        "leftRoi": 0,
+        "topRoi": 0,
+        "roiWidth": 0,
+        "roiHeight": 0
+    },
+    "switchDoorPos": {
+        "pos": 200
+    },
+    "incubateBoxPos": {
+        "pos1": 100,
+        "pos2": 200,
+        "pos3": 300,
+        "pos4": 400,
+        "pos5": 500
+    },
+    "incubateWaterSetting": {
+        "cleanWater": 0,
+        "wasteWater": 0
+    },
+    "pumpDetectionCmd":{
+        "cmd":"aV1000A800M100p4t20,0R"
+    },
+    "simulate": false,
+    "simulateData": {
+        "clampingJawInit": {
+            "delay": 1000,
+            "retCode": 0
+        },
+        "clampingJawClamp": {
+            "delay": 1001,
+            "retCode": 0
+        },
+        "clampingjawRotate": {
+            "delay": 1002,
+            "retCode": 0
+        },
+        "controlPanelSwitch4HotFan": {
+            "delay": 1003,
+            "retCode": 0
+        },
+        "controlPanelSwitch4Fan1": {
+            "delay": 1004,
+            "retCode": 0
+        },
+        "controlPanelSwitch4Fan2": {
+            "delay": 1005,
+            "retCode": 0
+        },
+        "controlPanelSwitch4UvLamp": {
+            "delay": 1006,
+            "retCode": 0
+        },
+        "controlPanelSwitch4Gland": {
+            "delay": 1007,
+            "retCode": 0
+        },
+        "controlPanelSwitch4FillFlash": {
+            "delay": 0,
+            "retCode": 0
+        },
+        "controlPanelSwitch4FailureLamp": {
+            "delay": 0,
+            "retCode": 0
+        },
+        "controlPanelState": {
+            "hotFan": true,
+            "fan1": true,
+            "fan2": true,
+            "uvLamp": true,
+            "targetPlateRegionAt": true,
+            "waterAbsorptionPlateRegionAt": true,
+            "reagentRegionAt": true,
+            "tipRegionAt": true,
+            "fillflash": true,
+            "failureLamp": true,
+            "targetBoardClampAt": false,
+            "wasteTipsBox": true,
+            "instrumentDoor": true,
+            "temperature": 36.2,
+            "electricControllBox_1temp": 36.2,
+            "electricControllBox_1Humidity": 36.2,
+            "electricControllBox_2temp": 36.2,
+            "electricControllBox_2Humidity": 36.2,
+            "sampleAreaTemperature": 36.2,
+            "SampleAreaHumidity": 36.2,
+            "retCode": 0
+        },
+        "incubateBoxSwitchIncubate": {
+            "delay": 1008,
+            "retCode": 0
+        },
+        "IncubateBoxSwitchDrying": {
+            "delay": 1009,
+            "retCode": 0
+        },
+        "incubateBoxSwitchDoor": {
+            "delay": 1010,
+            "retCode": 0
+        },
+        "incubateBoxSetPos": {
+            "delay": 1011,
+            "retCode": 0
+        },
+        "incubateWaterSetting": {
+            "delay": 0,
+            "retCode": 0
+        },
+        "motorInit": {
+            "delay": 1012,
+            "retCode": 0
+        },
+        "sampleRobotArmMove": {
+            "delay": 1013,
+            "retCode": 0
+        },
+        "clampingRobotArmMove": {
+            "delay": 1014,
+            "retCode": 0
+        },
+        "jackupMoveRequest": {
+            "delay": 1015,
+            "retCode": 0
+        },
+        "trackMove": {
+            "delay": 1016,
+            "retCode": 0
+        },
+        "glandMove": {
+            "delay": 1017,
+            "retCode": 0
+        },
+        "motorStop": {
+            "delay": 1017,
+            "retCode": 0
+        },
+        "sampleRobotArmSetSpeed": {
+            "delay": 1018,
+            "retCode": 0
+        },
+        "clampingRobotArmSetSpeed": {
+            "delay": 1019,
+            "retCode": 0
+        },
+        "jackupSetSpeed": {
+            "delay": 1020,
+            "retCode": 0
+        },
+        "trackSetSpeed": {
+            "delay": 1021,
+            "retCode": 0
+        },
+        "optoelectronicSwitchState": {
+            "absorptionBoardCoverd": true,
+            "targetBoardCoverd": true,
+            "retCode": 0
+        },
+        "pumpInit": {
+            "delay": 1022,
+            "retCode": 0
+        },
+        "pumpStop": {
+            "delay": 1024,
+            "retCode": 0
+        },
+        "pumpDetected": {
+            "delay": 1025,
+            "retCode": 0
+        },
+        "pumpSetAttr": {
+            "delay": 1023,
+            "retCode": 0
+        },
+        "barcodeScannerInit": {
+            "delay": 1026,
+            "retCode": 0
+        },
+        "barcodeScannerScanState": {
+            "code": "123456789",
+            "retCode": 0
+        }
+    }
+}
